@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Export runtime / local mail dumps
+.export_state.json
+.imap_state_*.json
+*.eml
+outlookemlexport.zip
+
+# Common Outlook store export folders (email addresses as dir names)
+*@*/
+
+# Build intermediates
+**/obj/
+**/bin/Debug/
+*.user
+*.suo
+*.pdb
+*.ilk
+*.log
+
+# Keep Release binaries intentionally (see force-add below if needed)
+# Ignore everything under bin/Release except the app itself
+OutlookEmlExport/bin/Release/**
+!OutlookEmlExport/bin/Release/OutlookEmlExport.exe
+!OutlookEmlExport/bin/Release/OutlookEmlExport.exe.config
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vs/
+.idea/
+*.swp
